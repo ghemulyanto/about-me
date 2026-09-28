@@ -1,0 +1,292 @@
+:root {
+  --bg: #fafafa;
+  --text: #18181b;
+  --muted: #71717a;
+  --line: #e4e4e7;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: min(1280px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+  padding-top: 48px;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding-top: 64px;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    padding-top: 96px;
+  }
+}
+
+.logo {
+  display: block;
+
+  font-size: 36px;
+  line-height: 1.05;
+  letter-spacing: -0.055em;
+  font-weight: 700;
+}
+
+@media (min-width: 640px) {
+  .logo {
+    font-size: 48px;
+  }
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  align-items: start;
+  column-gap: 80px;
+  row-gap: 32px;
+  padding: 16px 0 100px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--muted);
+
+  margin-top: 16px;
+}
+
+.eyebrow::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #22c55e;
+}
+
+.intro {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--muted);
+}
+
+.intro strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.intro + .intro {
+  margin-top: 18px;
+}
+
+.links,
+.side-nav {
+  display: flex;
+  gap: 18px;
+}
+
+.links a,
+.side-nav a {
+  font-size: 14px;
+  font-weight: 600;
+  border-bottom: 1px solid var(--text);
+  padding-bottom: 2px;
+}
+
+.hero-bottom {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+/* =========================
+   ILLUSTRATION
+========================= */
+
+.illustration {
+  display: block;
+  width: 100%;
+  max-width: 390px;
+  margin-left: auto;
+  border-radius: 32px;
+}
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+.experience {
+  border-top: 1px solid var(--line);
+  padding: 90px 0;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 40px;
+}
+
+.section-label {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: var(--muted);
+}
+
+.experience-item {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 40px;
+
+  padding-bottom: 55px;
+}
+
+.date {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.job-title {
+  font-size: 21px;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+
+  margin-bottom: 10px;
+}
+
+.company {
+  color: var(--muted);
+}
+
+.description {
+  max-width: 680px;
+
+  margin-top: 18px;
+
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin-top: 20px;
+}
+
+.tech span {
+  font-size: 12px;
+
+  padding: 5px 10px;
+
+  border: 1px solid var(--line);
+  border-radius: 100px;
+
+  color: var(--muted);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  border-top: 1px solid var(--line);
+
+  padding: 32px 0;
+
+  color: var(--muted);
+  font-size: 13px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 760px) {
+
+  .container {
+    width: min(100% - 24px, 1280px);
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 50px;
+
+    padding-top: 16px;
+  }
+
+  .illustration {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .experience {
+    padding: 70px 0;
+  }
+
+  .experience-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

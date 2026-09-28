@@ -1,0 +1,3 @@
+- Portfolio/website copy is written in English (e.g., experience descriptions) even though day-to-day communication with the agent is in Bahasa Indonesia. Confidence: 0.8
+- Experience/job entries should include a concise narrative describing the role and what was built (e.g., role progression or the system/platform developed), but avoid embellished, presumptuous specifics like "mentoring engineers, reviewing code, establishing better development practices" unless the user actually claims them. Confidence: 0.75
+- Experience entries should list the technology stack used for that role. Confidence: 0.7

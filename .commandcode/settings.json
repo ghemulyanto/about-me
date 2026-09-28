@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Shell(npm:*)",
+      "Shell(mkdir src\\assets 2>nul & move /y man-pcx.webp src\\assets\\man-pcx.webp)"
+    ],
+    "deny": [],
+    "defaultMode": "default"
+  }
+}

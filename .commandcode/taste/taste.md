@@ -1,0 +1,6 @@
+- Communicates in Bahasa Indonesia; prefers responses in Indonesian. Confidence: 0.8
+- Prefers incremental workflow: do a faithful rewrite/port first (preserve existing UI/UX), then refine gradually in small steps. Confidence: 0.8
+- Background: backend engineer using Java + Spring Boot with MongoDB, Redis, and Apache Solr; actively exploring AI engineering (LLMs, Spring AI, MCP, RAG, AI-powered search) and interested in web/dev tools. Confidence: 0.9
+- Delegates judgment calls to the agent — asks it to analyze, decide, and implement (e.g., which words to bold), then reviews the result afterward. Confidence: 0.7
+- Prefers project assets/files to be placed per the framework's best-practice conventions (e.g., moving an image from the project root into Astro's `src/assets/` for imported assets), creating the folder if needed. Confidence: 0.7
+- Values clean, optimized code — explicitly asks for periodic reviews to confirm the code is optimal and free of dead code (e.g., unused CSS variables, duplicate/identical rules), and wants that dead code removed. Confidence: 0.7
