@@ -119,6 +119,14 @@ header {
   font-weight: 600;
 }
 
+.intro a {
+  border-bottom: 1px solid currentColor;
+}
+
+.intro a:hover {
+  color: var(--text);
+}
+
 .intro + .intro {
   margin-top: 18px;
 }
@@ -207,6 +215,14 @@ header {
 
 .company {
   color: var(--muted);
+}
+
+.company a {
+  border-bottom: 1px solid currentColor;
+}
+
+.company a:hover {
+  color: var(--text);
 }
 
 .description {
